@@ -19,6 +19,7 @@ style guide rules end -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="/">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 <title>Sintezis Dashboard</title>
@@ -33,7 +34,7 @@ style guide rules end -->
 <link href="css/main.css" rel="stylesheet">
 
 <!-- here we use body tag to add custom classes to it, no need to close it, or account it in tags hierarchy  -->
-<body class="snt-body-bg">
+<body class="snt-body-bg" ng-app="dashboard.sintezis">
 
 <!-- navigation bar -->
 
@@ -62,6 +63,7 @@ style guide rules end -->
           </ul>
         </li> -->
         <!-- <li class="nav-item"><a class="nav-link" href="activity.html">activity</a></li> -->
+        <li class="nav-item"><a class="nav-link" href="#!/elude">test</a></li>
         <li class="nav-item"><a class="nav-link" href="https://wiki.sintezis.co/" target="_blank">wiki</a></li>
         <li class="nav-item"><a class="nav-link" href="https://www.sintezis.co" target="_blank">official website</a></li>
         <!-- <li class="nav-item"><a class="nav-link" href="#">login -> </a></li> -->
@@ -71,234 +73,7 @@ style guide rules end -->
   </div>
 </nav>
 
-<div class="snt-container container">
-  <div class="row">
-    <h2>Managment</h2>
-    <div class="col-md-12 jumbotron">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h4 class="text-center">Slack</h4>
-            <a href="https://sintezis.slack.com/" >
-              <img src="imgs/slack.png" height="120" class="center-block">
-            </a>
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">request access</button>
-                <!-- <button type="button" class="btn btn-default"></button> -->
-                <a href="https://wiki.sintezis.co/sintezis-dashboard-guide/workbench#slack" class="btn btn-default" role="button" >more info...</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <h4 class="text-center">Kanban</h4>
-            <a href="http://kanban.sintezis.co" >
-              <img src="imgs/trello.png" height="120" class="center-block">
-            </a>
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">request access</button>
-                <a href="https://wiki.sintezis.co/sintezis-dashboard-guide/workbench#trello" class="btn btn-default" role="button" >more info...</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <h4 class="text-center">Zoom</h4>
-            <a href="https://zoom.us/">
-              <div class="zoom-logo center-block corner-radius">
-                <div class="v-align">
-                    <img src="imgs/zoom.png">
-                </div>
-              </div>
-            </a>
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">request access</button>
-                <a href="https://wiki.sintezis.co/sintezis-dashboard-guide/workbench#zoom" class="btn btn-default" role="button" >more info...</a>
-              </div>
-            </div>
-          </div>  
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <h2>Documents</h2>
-    <div class="col-md-12 jumbotron">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h4 class="text-center">Wiki Pages</h4>
-            <a href="http://wiki.sintezis.co" >
-              <img src="imgs/gitbook.png" height="120" class="center-block">
-            </a>
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">request access</button>
-                <a href="https://wiki.sintezis.co/sintezis-dashboard-guide/workbench#gitbook" class="btn btn-default" role="button" >more info...</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <h4 class="text-center">Cloud File Storage</h4>
-            <a href="https://cloud.sintezis.co" >
-              <img src="imgs/nextcloud.png" height="120" class="center-block">
-            </a>
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">request access</button>
-                <a href="https://wiki.sintezis.co/sintezis-dashboard-guide/workbench#google-suite" class="btn btn-default" role="button" >more info...</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <h4 class="text-center">Docusign</h4>
-            <a href="https://app.docusign.com/home" >
-              <img src="imgs/docusign.png" height="120" class="center-block corner-radius">
-            </a>
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">request access</button>
-                <a href="https://wiki.sintezis.co/sintezis-dashboard-guide/workbench#docusign" class="btn btn-default" role="button" >more info...</a>
-              </div>
-            </div>
-          </div>  
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <h2>Tools</h2>
-    <div class="col-md-12 jumbotron">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h4 class="text-center">Draw.io</h4>
-            <a href="https://www.draw.io" >
-              <img src="imgs/drawio.jpg" height="120" class="center-block corner-radius">
-            </a>
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">request access</button>
-                <a href="https://wiki.sintezis.co/sintezis-dashboard-guide/workbench#drawio" class="btn btn-default" role="button" >more info...</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <h4 class="text-center">Swagger</h4>
-            <a href="https://app.swaggerhub.com/home" >
-              <img src="imgs/swagger.png" height="120" class="center-block">
-            </a>
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">request access</button>
-                <a href="https://wiki.sintezis.co/sintezis-dashboard-guide/workbench#swagger" class="btn btn-default" role="button" >more info...</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <h4 class="text-center">Figma</h4>
-            <a href="https://www.figma.com/files/team/751150550811543897/Sintezis" >
-              <img src="imgs/figma.png" height="120" class="center-block">
-            </a>
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">request access</button>
-                <a href="https://wiki.sintezis.co/sintezis-dashboard-guide/workbench#invision" class="btn btn-default" role="button" >more info...</a>
-              </div>
-            </div>
-          </div>  
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <h2>Development</h2>
-    <div class="col-md-12 jumbotron">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h4 class="text-center">Gitlab</h4>
-            <a href="https://gitlab.sintezis.co" >
-              <img src="imgs/gitlab.png" height="120" class="center-block corner-radius">
-            </a>
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">request access</button>
-                <a href="https://wiki.sintezis.co/sintezis-dashboard-guide/workbench#github" class="btn btn-default" role="button" >more info...</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <h4 class="text-center">Proxmox</h4>
-            <a href="https://195.201.197.31:8006" >
-              <img src="imgs/proxmox.png" height="120" class="center-block">
-            </a>
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">request access</button>
-                <a href="https://wiki.sintezis.co/sintezis-dashboard-guide/workbench#heroku" class="btn btn-default" role="button" >more info...</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <h4 class="text-center">Firebase</h4>
-            <a href="https://console.firebase.google.com/" >
-              <img src="imgs/firebase.png" height="120" class="center-block">
-            </a>
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">request access</button>  
-                <a href="https://wiki.sintezis.co/sintezis-dashboard-guide/workbench#fabric" class="btn btn-default" role="button" >more info...</a>
-              </div>
-            </div>
-          </div>  
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="requestAccessModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-
-    <div class="modal-content">
-      <!-- Modal Header -->
-      <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">
-            <span aria-hidden="true">&times;</span>
-            <span class="sr-only">Close</span>
-          </button>
-          <h4 class="modal-title" id="myModalLabel">Request Access</h4>
-      </div>
-        
-      <!-- Modal Body -->
-      <div class="modal-body">
-        <form role="form">
-            <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="input" class="form-control" id="name" placeholder="Enter full name"/>
-              </div>
-          <div class="form-group">
-            <label for="email">Email address</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter email"/>
-          </div>
-        </form>
-      </div>
-          
-      <!-- Modal Footer -->
-      <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Request</button>
-      </div>
-    </div>
-
-  </div>
-</div>
+<ng_view></ng_view>
 
 <!-- footer -->
 <div class="container">
@@ -310,10 +85,12 @@ style guide rules end -->
 <!-- jQuery -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.9/angular.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.9/angular-route.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-route.js'></script>
 
 <!-- Latest compiled and minified Bootstrap 3 JavaScript  -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<script src="js/main.js" type="text/javascript"></script>
+
+<script src="js/projects.js" type="text/javascript"></script>
+<script src="js/app.js" type="text/javascript"></script>
