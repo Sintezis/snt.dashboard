@@ -71,7 +71,7 @@ var projects =
 			"infoUrl": "http://wiki.sintezis.co/books/public-wiki/page/management#bkmrk-bookstack"
 		},
 		"cloud": {
-			"url": "https://cloud.sintezis.co/index.php/s/mtfDqgAGEqrtpqx",
+			"url": "https://cloud.sintezis.co/index.php/s/mtfDqgAGEqrtpqx/authenticate/showShare",
 			"infoUrl": "http://wiki.sintezis.co/books/public-wiki/page/management#bkmrk-nextcloud"
 		},
 		"doc": {
