@@ -18,8 +18,6 @@
 
 			})
 
-			$locationProvider
-				.html5Mode(true)
 		}])
 		.controller('HomeController', function($rootScope, $routeParams)
 		{
