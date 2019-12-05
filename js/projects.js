@@ -3,7 +3,7 @@ var projects =
 	"sintezis":
 	{
 		"slack": {
-			"url": "https://slack.sintezis.slack",
+			"url": "https://sintezis.slack.com",
 			"infoUrl": "http://wiki.sintezis.co/books/public-wiki/page/management#bkmrk-slack"
 		},
 		"kanban": {
