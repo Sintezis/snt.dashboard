@@ -3,6 +3,10 @@ img {
 	margin-bottom: 25px;
 }
 
+body {
+	background-color: black !important;
+}
+
 .snt-container {
 	padding-top: 80px;
 }
@@ -107,6 +111,22 @@ ul {
     color: #ffffff;
     background-color: transparent !important;
     border-color: #ffffff !important;
+}
+
+.jumbotron {
+	transition: 0.2s all ease-in-out !important;
+    padding: 30px !important;
+    margin-bottom: 30px !important;
+    color: inherit !important;
+    background-color: black !important;
+    border: 2px solid white !important;
+}
+
+.jumbotron:hover {
+    border: 2px solid #EC009C !important;
+    box-shadow: 0px 0px 20px #C319E1 !important;
+    color: #EC009C !important;
+    transition: 0.2s all ease-in-out !important;
 }
 
 /* .panel-success .panel-body {
