@@ -6,8 +6,8 @@ var projects =
 			"url": "https://sintezis.slack.com",
 			"infoUrl": "http://wiki.sintezis.co/books/public-wiki/page/management#bkmrk-slack"
 		},
-		"kanban": {
-			"url": "http://kanban.sintezis.co",
+		"jira": {
+			"url": "http://jira.sintezis.co",
 			"infoUrl": "http://wiki.sintezis.co/books/public-wiki/page/management#bkmrk-restyaboard"
 		},
 		"zoom": {
