@@ -21,11 +21,6 @@ body {
 	background: #030855 !important;
 }
 
-.border {
-	border: solid 1px gray;
-	padding: 14px;
-}
-
 .corner-radius {
 	border-radius: 10px;
 }
@@ -336,4 +331,26 @@ ul {
 
 .col-md-10.col-md-offset-1.col-xs-8.col-xs-offset-2 {
     padding-bottom: 20px;
+}
+
+@media screen and (max-width: 992px) {
+	.management {
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+		margin-bottom: 60px;
+	}
+	.development {
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+	}
+	.tools {
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+		margin-bottom: 60px;
+	}
+	.documents {
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+		margin-bottom: 60px;
+	}
 }
