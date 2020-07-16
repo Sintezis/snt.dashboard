@@ -1,228 +1,272 @@
-<div class="snt-container container">
-  <div class="row">
-    <h2>Managment</h2>
-    <div class="col-md-12 jumbotron">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h4 class="text-center">Slack</h4>
-            <a href="{{home.projectData.slack.url}}" >
-              <img src="imgs/slack.png" height="120" class="center-block">
-            </a>
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">request access</button>
-                <!-- <button type="button" class="btn btn-default"></button> -->
-                <a href="{{home.projectData.slack.infoUrl}}" class="btn btn-default" role="button" >more info...</a>
-              </div>
-            </div>
+<div class="col-md-12 text-center" style="border-bottom:#4B576A 1px solid; padding-top:10px;">
+  <svg width="30" height="30" viewBox="0 0 28 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4997 0.334748C16.4997 0.148858 16.3683 0 16.1804 0H7.83639C7.64846 0 7.51706 0.148858 7.51706 0.334748L0 25.7273C0 25.9132 0.131402 26.0621 0.319328 26.0621H8.66334C8.85126 26.0621 8.98266 25.9132 8.98266 25.7273L16.4997 0.334748Z" fill="#F0F2FE"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M27.6499 9.01553C27.6499 8.82964 27.5185 8.68079 27.3306 8.68079H18.9866C18.7987 8.68079 18.6673 8.82964 18.6673 9.01553L11.1502 34.4081C11.1502 34.594 11.2816 34.7429 11.4695 34.7429H19.8135C20.0015 34.7429 20.1329 34.594 20.1329 34.4081L27.6499 9.01553Z" fill="#F0F2FE"/>
+  </svg>
+  <h1 style="display:inline;">Dashboard</h4>
+</div>
+
+<div class="snt-container container" style="margin-top:150px;">
+<div class="row">
+  <div class="col-md-3 col-sm-6 management">
+      <h2>Managment</h2>
+        <div class="col-md-12 border">
+          <div class="col-md-10 col-md-offset-1 col-xs-8 col-xs-offset-2">
+          <h4 class="text-center" style="float:right;">Slack</h4>
+          <a href="{{home.projectData.slack.url}}" >
+          <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0)">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M54.1406 0.00012207H5.85938C2.62333 0.00012207 0 2.62345 0 5.8595V54.1407C0 57.3768 2.62333 60.0001 5.85938 60.0001H54.1406C57.3767 60.0001 60 57.3768 60 54.1407V5.8595C60 2.62345 57.3767 0.00012207 54.1406 0.00012207ZM24.1324 8C21.7001 8.00179 19.7316 9.9717 19.7334 12.3991C19.7316 14.8265 21.7019 16.7964 24.1342 16.7982H28.5349V12.4009C28.5367 9.9735 26.5664 8.00359 24.1324 8ZM24.1324 19.7333H12.4007C9.96846 19.7351 7.99821 21.705 8 24.1324C7.99641 26.5598 9.96666 28.5297 12.3989 28.5333H24.1324C26.5646 28.5315 28.5349 26.5616 28.5331 24.1342C28.5349 21.705 26.5646 19.7351 24.1324 19.7333ZM47.5993 19.7333C50.0316 19.7351 52.0018 21.705 52 24.1324C52.0018 26.5616 50.0316 28.5315 47.5993 28.5333H43.1985V24.1324C43.1967 21.705 45.167 19.7351 47.5993 19.7333ZM40.2665 12.3991V24.1324C40.2683 26.5616 38.298 28.5315 35.8658 28.5333C33.4335 28.5297 31.4632 26.5598 31.4668 24.1324V12.3991C31.465 9.97171 33.4353 8.0018 35.8676 8.00001C38.2998 8.0036 40.2683 9.9735 40.2665 12.3991ZM35.8658 52C38.2981 51.9982 40.2683 50.0283 40.2665 47.6009C40.2683 45.1735 38.2981 43.2036 35.8658 43.2018H31.4651V47.6009C31.4633 50.0265 33.4335 51.9964 35.8658 52ZM35.8658 40.2649H47.5992C50.0315 40.2631 52.0018 38.2932 52 35.8658C52.0036 33.4384 50.0333 31.4685 47.601 31.4649H35.8676C33.4353 31.4667 31.4651 33.4366 31.4669 35.864C31.4651 38.2932 33.4335 40.2631 35.8658 40.2649ZM12.4007 40.2648C9.96842 40.263 7.99816 38.2931 7.99996 35.8657C7.99816 33.4383 9.96842 31.4684 12.4007 31.4666H16.8014V35.8657C16.8032 38.2931 14.8329 40.263 12.4007 40.2648ZM19.7334 47.5991V35.8657C19.7316 33.4383 21.7001 31.4684 24.1341 31.4684C26.5664 31.4719 28.5366 33.4419 28.5331 35.8693V47.6009C28.5348 50.0283 26.5646 51.9982 24.1323 52C21.7001 51.9964 19.7298 50.0265 19.7334 47.5991Z" fill="#F0F2FE"/>
+          </g>
+          <defs>
+          <clipPath id="clip0">
+          <rect width="60" height="60" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg>
+          </a>
           </div>
-          <div class="col-md-4">
-            <h4 class="text-center">Jira</h4>
-            <a href="{{home.projectData.jira.url}}" >
-              <img src="imgs/jira.png" height="120" class="center-block">
-            </a>
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">request access</button>
-                <a href="{{home.projectData.jira.infoUrl}}" class="btn btn-default" role="button" >more info...</a>
-              </div>
-            </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">Request access</button>
+              <!-- <button type="button" class="btn btn-default"></button> -->
+              <a href="{{home.projectData.slack.infoUrl}}" class="btn btn-default" role="button" >More info...</a>
           </div>
-          <div class="col-md-4">
-            <h4 class="text-center">Zoom</h4>
-            <a href="{{home.projectData.zoom.url}}">
-              <div class="zoom-logo center-block corner-radius">
-                <div class="v-align">
-                    <img src="imgs/zoom.png">
-                </div>
-              </div>
-            </a>
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">request access</button>
-                <a href="{{home.projectData.zoom.infoUrl}}" class="btn btn-default" role="button" >more info...</a>
-              </div>
-            </div>
-          </div>  
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <h2>Documents</h2>
-    <div class="col-md-12 jumbotron">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h4 class="text-center">Wiki Pages</h4>
-            <a href="{{home.projectData.wiki.url}}" >
-              <img src="imgs/gitbook.png" height="120" class="center-block">
-            </a>
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">request access</button>
-                <a href="{{home.projectData.wiki.infoUrl}}" class="btn btn-default" role="button" >more info...</a>
-              </div>
-            </div>
+        <div class="col-md-12 border">
+        <div class="col-md-10 col-md-offset-1 col-xs-8 col-xs-offset-2">
+          <h4 class="text-center" style="float:right;">Kanban</h4>
+          <a href="{{home.projectData.jira.url}}" >
+          <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M54.1406 0H5.85938C2.62333 0 0 2.62333 0 5.85938V54.1406C0 57.3767 2.62333 60 5.85938 60H54.1406C57.3767 60 60 57.3767 60 54.1406V5.85938C60 2.62333 57.3767 0 54.1406 0ZM49.3875 7.8H36.7125C35.1592 7.8 33.9 9.0592 33.9 10.6125V31.2375C33.9 32.7908 35.1592 34.05 36.7125 34.05H49.3875C50.9408 34.05 52.2 32.7908 52.2 31.2375V10.6125C52.2 9.0592 50.9408 7.8 49.3875 7.8ZM10.6125 7.8H23.2875C24.8408 7.8 26.1 9.0592 26.1 10.6125V46.2375C26.1 47.7908 24.8408 49.05 23.2875 49.05H10.6125C9.0592 49.05 7.8 47.7908 7.8 46.2375V10.6125C7.8 9.0592 9.0592 7.8 10.6125 7.8Z" fill="#F0F2FE"/>
+          </svg>
+          </a>
           </div>
-          <div class="col-md-4">
-            <h4 class="text-center">Cloud File Storage</h4>
-            <a href="{{home.projectData.cloud.url}}" >
-              <img src="imgs/nextcloud.png" height="120" class="center-block">
-            </a>
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">request access</button>
-                <a href="{{home.projectData.cloud.infoUrl}}" class="btn btn-default" role="button" >more info...</a>
-              </div>
-            </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">Request access</button>
+              <a href="{{home.projectData.jira.infoUrl}}" class="btn btn-default" role="button" >More info...</a>
           </div>
-          <div class="col-md-4">
-            <h4 class="text-center">Docusign</h4>
-            <a href="{{home.projectData.doc.url}}" >
-              <img src="imgs/docusign.png" height="120" class="center-block corner-radius">
-            </a>
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">request access</button>
-                <a href="{{home.projectData.doc.infoUrl}}" class="btn btn-default" role="button" >more info...</a>
-              </div>
-            </div>
-          </div>  
         </div>
-      </div>
-    </div>
+        <div class="col-md-12">
+        <div class="col-md-10 col-md-offset-1 col-xs-8 col-xs-offset-2">
+          <h4 class="text-center" style="float:right;">Zoom</h4>
+          <a href="{{home.projectData.zoom.url}}">
+            <div class="zoom-logo center-block corner-radius">
+              <div class="v-align">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M54.1406 0.00012207H5.85938C2.62333 0.00012207 0 2.62345 0 5.8595V54.1407C0 57.3768 2.62333 60.0001 5.85938 60.0001H54.1406C57.3767 60.0001 60 57.3768 60 54.1407V5.8595C60 2.62345 57.3767 0.00012207 54.1406 0.00012207ZM25.6893 26.2857C24.6656 25.262 23.3268 24.7501 21.975 24.7501C20.6362 24.7501 19.2844 25.262 18.2606 26.2857C16.2131 28.3332 16.2131 31.6539 18.2606 33.7145C20.3081 35.762 23.6287 35.762 25.6893 33.7145C27.7368 31.667 27.7368 28.3332 25.6893 26.2857ZM24.2062 32.2314C22.9725 33.4651 20.9775 33.4651 19.7569 32.2314C18.5231 30.9976 18.5231 29.0026 19.7569 27.782C20.9906 26.5482 22.9856 26.5482 24.2062 27.782C25.4268 29.0026 25.4268 30.9976 24.2062 32.2314ZM32.9999 24.7501C34.3518 24.7501 35.6905 25.262 36.7143 26.2857C38.7618 28.3332 38.7618 31.667 36.7143 33.7145C34.6537 35.762 31.3331 35.762 29.2856 33.7145C27.2381 31.6539 27.2381 28.3332 29.2856 26.2857C30.3093 25.262 31.6612 24.7501 32.9999 24.7501ZM30.7818 32.2314C32.0024 33.4651 33.9974 33.4651 35.2312 32.2314C36.4518 30.9976 36.4518 29.0026 35.2312 27.782C34.0106 26.5482 32.0156 26.5482 30.7818 27.782C29.5481 29.0026 29.5481 30.9976 30.7818 32.2314ZM8.84999 35.2239L9.37499 35.2501H17.25L17.2237 34.7251C17.1581 33.8589 16.5412 33.2289 15.675 33.1764L15.15 33.1501H10.425L16.725 26.8501L16.6987 26.3251C16.6594 25.4589 16.0162 24.8157 15.15 24.7764L14.625 24.7501H6.75L6.77625 25.2751C6.84187 26.1282 7.47187 26.7714 8.325 26.8239L8.84999 26.8501H13.575L7.275 33.1501L7.30125 33.6751C7.35375 34.5414 7.98375 35.1714 8.84999 35.2239ZM45.0487 28.9501C45.0224 28.5564 44.9699 28.2151 44.7862 27.9001C44.4318 27.2701 43.7493 26.8501 42.9749 26.8501C42.2005 26.8501 41.5312 27.2701 41.1637 27.9001C40.9799 28.202 40.9274 28.5564 40.9012 28.9501L40.8749 29.4751V33.1501L40.8487 33.6751C40.8093 34.5414 40.1793 35.1714 39.2999 35.2239L38.7749 35.2501V24.7501C39.2999 24.7501 40.2187 25.0126 40.6255 25.472C41.2949 25.0126 42.1087 24.7501 42.9749 24.7501C44.2349 24.7501 45.3505 25.3014 46.1249 26.1676C46.8993 25.3014 48.0149 24.7501 49.2749 24.7501C51.598 24.7501 53.4749 26.627 53.4749 28.9501V29.4751V35.2501L52.9499 35.2239C52.0837 35.1714 51.4537 34.5414 51.4012 33.6751L51.3749 33.1501V29.4751L51.3487 28.9501C51.3355 28.5695 51.283 28.2151 51.0993 27.9001C50.7318 27.2701 50.0493 26.8501 49.2749 26.8501C48.5005 26.8501 47.8312 27.257 47.4637 27.887C47.2799 28.202 47.2274 28.5564 47.2012 28.9501L47.1749 29.4751V35.2501L46.6499 35.2239C45.7837 35.1714 45.1537 34.5282 45.1012 33.6751L45.0749 33.1501V29.4751L45.0487 28.9501Z" fill="#F0F2FE"/>
+              </svg>
+              </div>
+            </div>
+          </a>
+          </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">Request access</button>
+              <a href="{{home.projectData.zoom.infoUrl}}" class="btn btn-default" role="button" >More info...</a>
+          </div>
+        </div>  
   </div>
 
-  <div class="row">
-    <h2>Tools</h2>
-    <div class="col-md-12 jumbotron">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h4 class="text-center">Draw.io</h4>
-            <a href="{{home.projectData.drawio.url}}" >
-              <img src="imgs/drawio.jpg" height="120" class="center-block corner-radius">
-            </a>
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">request access</button>
-                <a href="{{home.projectData.drawio.infoUrl}}" class="btn btn-default" role="button" >more info...</a>
-              </div>
-            </div>
+  <div class="col-md-3 col-sm-6 documents">
+      <h2>Documents</h2>
+        <div class="col-md-12 border">
+        <div class="col-md-10 col-md-offset-1 col-xs-8 col-xs-offset-2">
+          <h4 class="text-center" style="float:right;">GitBook</h4>
+          <a href="{{home.projectData.wiki.url}}" >
+          <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.85938 0H54.1406C57.3767 0 60 2.62333 60 5.85938V54.1406C60 57.3767 57.3767 60 54.1406 60H5.85938C2.62333 60 0 57.3767 0 54.1406V5.85938C0 2.62333 2.62333 0 5.85938 0ZM29.0905 41.8656C29.0905 41.1565 28.5128 40.5789 27.8031 40.5789C27.0935 40.5789 26.5158 41.1565 26.5164 41.8656C26.5164 42.5746 27.0935 43.1522 27.8031 43.1522C28.5128 43.1522 29.0905 42.5752 29.0905 41.8656ZM46.7269 31.3213C46.7269 32.0303 47.3046 32.608 48.0142 32.608C48.7239 32.608 49.3015 32.0303 49.3009 31.3213C49.3009 30.6116 48.7239 30.034 48.0142 30.034C47.3046 30.034 46.7269 30.6116 46.7269 31.3213ZM44.0285 31.3213C44.0285 29.1232 45.8167 27.3355 48.0142 27.3355C50.2117 27.3355 52 29.1244 52 31.3219C52 33.5194 50.2117 35.3077 48.0142 35.3077C47.1273 35.3077 46.2611 35.0078 45.5628 34.4622L31.7876 41.9278C31.755 44.0976 29.9799 45.8526 27.8025 45.8526C25.8231 45.8526 24.143 44.3918 23.8614 42.4401L11.3541 35.9897C9.29925 34.9117 7.86171 31.9744 8.00943 29.1565C8.10371 27.3789 8.83536 25.947 10.0164 25.2285C10.6764 24.8275 22.2617 19.0899 30.9183 14.8087L31.3816 14.5793C31.6205 14.4309 32.9568 13.698 34.6175 14.5673C36.5298 15.5691 40.8701 17.6016 44.718 19.4035L44.7853 19.435C46.5937 20.281 48.4473 21.1491 49.6529 21.7274C49.6548 21.7274 50.3035 21.9744 50.3035 22.6017C50.3035 23.0543 49.9408 23.3516 49.6303 23.4692L28.4273 34.4962C27.2921 35.0342 26.9213 34.9092 26.255 34.6012C25.8231 34.4006 15.5655 28.9981 12.4321 27.3468L12.3529 27.3053C11.9361 27.0872 11.5433 27.0709 11.217 27.2563C10.7029 27.5492 10.3653 28.3073 10.3138 29.2847C10.2145 31.1578 11.1498 33.2164 12.3994 33.8733L24.2278 40.1093C24.8979 38.751 26.2826 37.8817 27.8019 37.8817C29.1131 37.8817 30.3256 38.5203 31.0736 39.5983L44.2397 32.5897C44.0995 32.1755 44.0285 31.7493 44.0285 31.3213Z" fill="#F0F2FE"/>
+          </svg>
+          </a>
           </div>
-          <div class="col-md-4">
-            <h4 class="text-center">Swagger</h4>
-            <a href="{{home.projectData.swagger.url}}" >
-              <img src="imgs/swagger.png" height="120" class="center-block">
-            </a>
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">request access</button>
-                <a href="{{home.projectData.swagger.infoUrl}}" class="btn btn-default" role="button" >more info...</a>
-              </div>
-            </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">Request access</button>
+              <a href="{{home.projectData.wiki.infoUrl}}" class="btn btn-default" role="button" >More info...</a>
           </div>
-          <div class="col-md-4">
-            <h4 class="text-center">Figma</h4>
-            <a href="{{home.projectData.figma.url}}" >
-              <img src="imgs/figma.png" height="120" class="center-block">
-            </a>
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">request access</button>
-                <a href="{{home.projectData.figma.infoUrl}}" class="btn btn-default" role="button" >more info...</a>
-              </div>
-            </div>
-          </div>  
         </div>
+        <div class="col-md-12 border">
+        <div class="col-md-10 col-md-offset-1 col-xs-8 col-xs-offset-2">
+          <h4 class="text-center" style="float:right;">CloudFile</h4>
+          <a href="{{home.projectData.cloud.url}}" >
+          <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.85938 0H54.1406C57.3767 0 60 2.62333 60 5.85938V54.1406C60 57.3767 57.3767 60 54.1406 60H5.85938C2.62333 60 0 57.3767 0 54.1406V5.85938C0 2.62333 2.62333 0 5.85938 0ZM20.418 27.3445C21.5953 23.125 25.4539 19.9797 30.0344 19.9797C34.5891 19.9797 38.4219 23.0906 39.6336 27.2929C40.6734 25.0758 42.8992 23.4945 45.4945 23.4945C49.0867 23.5117 51.9914 26.425 52.0086 30.0086C52 33.5922 49.0867 36.4968 45.4945 36.5226C42.8992 36.5226 40.6734 34.9414 39.6336 32.7242C38.4305 36.9093 34.5977 40.0203 30.043 40.0203C25.4539 40.0203 21.6039 36.875 20.4266 32.6468C19.3953 34.907 17.1438 36.514 14.5141 36.514C10.9219 36.4968 8.01719 33.5836 8 30C8.01719 26.4164 10.9219 23.5031 14.5055 23.4859C17.1266 23.4859 19.3953 25.0843 20.418 27.3445ZM36.2219 30C36.2219 26.5539 33.4719 23.8039 30.0344 23.8039C26.5969 23.8039 23.8469 26.5539 23.8383 30C23.8211 33.4203 26.6055 36.2133 30.0344 36.1961C33.4719 36.1961 36.2219 33.4461 36.2219 30ZM17.2039 30C17.2039 28.4961 16.0266 27.3101 14.5141 27.3101C13.0102 27.3101 11.8242 28.4875 11.8328 30C11.807 31.4867 13.0273 32.707 14.5141 32.6898C16.018 32.6898 17.2039 31.5039 17.2039 30ZM48.1844 30C48.1844 28.4961 46.9984 27.3101 45.4859 27.3101C43.982 27.3101 42.7961 28.4875 42.8047 30C42.7875 31.4867 43.9992 32.707 45.4859 32.6898C46.9984 32.6898 48.1844 31.5039 48.1844 30Z" fill="#F0F2FE"/>
+          </svg>
+          </a>
+          </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">Request access</button>
+              <a href="{{home.projectData.cloud.infoUrl}}" class="btn btn-default" role="button" >More info...</a>
+          </div>
+        </div>
+        <div class="col-md-12">
+        <div class="col-md-10 col-md-offset-1 col-xs-8 col-xs-offset-2">
+          <h4 class="text-center" style="float:right;">DocuSign</h4>
+          <a href="{{home.projectData.doc.url}}" >
+          <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g clip-path="url(#clip0)">
+          <g clip-path="url(#clip1)">
+          <path d="M54.1406 0.00012207H5.85938C2.62333 0.00012207 0 2.62345 0 5.8595V54.1407C0 57.3768 2.62333 60.0001 5.85938 60.0001H54.1406C57.3767 60.0001 60 57.3768 60 54.1407V5.8595C60 2.62345 57.3767 0.00012207 54.1406 0.00012207Z" fill="#F0F2FE"/>
+          </g>
+          <rect x="5" y="5" width="50" height="50" fill="url(#pattern0)"/>
+          </g>
+          <defs>
+          <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+          <use xlink:href="#image0" transform="scale(0.00333333)"/>
+          </pattern>
+          <clipPath id="clip0">
+          <rect width="60" height="60" fill="white" transform="translate(0 0.00012207)"/>
+          </clipPath>
+          <clipPath id="clip1">
+          <rect width="60" height="60" fill="white" transform="translate(0 0.00012207)"/>
+          </clipPath>
+          <image id="image0" width="300" height="300" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAYAAAB5fY51AAAACXBIWXMAAAsTAAALEwEAmpwYAAAFIGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDUgNzkuMTYzNDk5LCAyMDE4LzA4LzEzLTE2OjQwOjIyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoTWFjaW50b3NoKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjAtMDctMTRUMTM6MDk6NDQrMDI6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDIwLTA3LTE0VDEzOjE1OjM1KzAyOjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIwLTA3LTE0VDEzOjE1OjM1KzAyOjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgcGhvdG9zaG9wOklDQ1Byb2ZpbGU9InNSR0IgSUVDNjE5NjYtMi4xIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOmZlZTM2YmZmLTkz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"/>
+          </defs>
+          </svg>
+          </a>
+          </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">Request access</button>
+              <a href="{{home.projectData.doc.infoUrl}}" class="btn btn-default" role="button" >More info...</a>
+          </div>
       </div>
-    </div>
   </div>
 
-  <div class="row">
-    <h2>Development</h2>
-    <div class="col-md-12 jumbotron">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h4 class="text-center">Gitlab</h4>
-            <a href="{{home.projectData.gitlab.url}}" >
-              <img src="imgs/gitlab.png" height="120" class="center-block corner-radius">
-            </a>
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">request access</button>
-                <a href="{{home.projectData.gitlab.infoUrl}}" class="btn btn-default" role="button" >more info...</a>
-              </div>
-            </div>
+  <div class="col-md-3 col-sm-6 tools">
+      <h2>Tools</h2>
+        <div class="col-md-12 border">
+        <div class="col-md-10 col-md-offset-1 col-xs-8 col-xs-offset-2">
+          <h4 class="text-center" style="float:right;">Draw.io</h4>
+          <a href="{{home.projectData.drawio.url}}" >
+          <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.85938 0H54.1406C57.3767 0 60 2.62333 60 5.85938V54.1406C60 57.3767 57.3767 60 54.1406 60H5.85938C2.62333 60 0 57.3767 0 54.1406V5.85938C0 2.62333 2.62333 0 5.85938 0ZM24.6618 10C22.875 10 21.4265 11.4485 21.4265 13.2353V21.6471C21.4265 23.0965 22.3797 24.3234 23.6934 24.7349L17.455 35.8824H11.2353C9.44849 35.8824 8 37.3308 8 39.1176V47.5294C8 49.3162 9.44849 50.7647 11.2353 50.7647H21.9118C23.6986 50.7647 25.1471 49.3162 25.1471 47.5294V39.1176C25.1471 37.3308 23.6986 35.8824 21.9118 35.8824H21.3478L27.5038 24.8824H32.4962L38.6522 35.8824H38.0882C36.3014 35.8824 34.8529 37.3308 34.8529 39.1176V47.5294C34.8529 49.3162 36.3014 50.7647 38.0882 50.7647H48.7647C50.5515 50.7647 52 49.3162 52 47.5294V39.1176C52 37.3308 50.5515 35.8824 48.7647 35.8824H42.545L36.3066 24.7349C37.6203 24.3234 38.5735 23.0965 38.5735 21.6471V13.2353C38.5735 11.4485 37.125 10 35.3382 10H24.6618Z" fill="#F0F2FE"/>
+          </svg>
+          </a>
           </div>
-          <div class="col-md-4">
-            <h4 class="text-center">Proxmox</h4>
-            <a href="{{home.projectData.proxmox.url}}" >
-              <img src="imgs/proxmox.png" height="120" class="center-block">
-            </a>
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">request access</button>
-                <a href="{{home.projectData.proxmox.infoUrl}}" class="btn btn-default" role="button" >more info...</a>
-              </div>
-            </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">Request access</button>
+              <a href="{{home.projectData.drawio.infoUrl}}" class="btn btn-default" role="button" >More info...</a>
           </div>
-          <div class="col-md-4">
-            <h4 class="text-center">Firebase</h4>
-            <a href="{{home.projectData.firebase.url}}" >
-              <img src="imgs/firebase.png" height="120" class="center-block">
-            </a>
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">request access</button>  
-                <a href="{{home.projectData.proxmox.infoUrl}}" class="btn btn-default" role="button" >more info...</a>
-              </div>
-            </div>
-          </div>  
         </div>
+        <div class="col-md-12 border">
+        <div class="col-md-10 col-md-offset-1 col-xs-8 col-xs-offset-2">
+          <h4 class="text-center" style="float:right;">Swagger</h4>
+          <a href="{{home.projectData.swagger.url}}" >
+          <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M54.1406 0H5.85938C2.62333 0 0 2.62333 0 5.85938V54.1406C0 57.3767 2.62333 60 5.85938 60H54.1406C57.3767 60 60 57.3767 60 54.1406V5.85938C60 2.62333 57.3767 0 54.1406 0ZM38.3653 29.9911C38.3077 31.0619 37.3722 31.9511 36.4502 31.7959H36.4364C35.4152 31.7973 34.5864 30.9704 34.5853 29.9492C34.62 28.9253 35.4692 28.1182 36.4935 28.1356C37.5147 28.1406 38.4204 29.0035 38.3653 29.9911ZM22.7659 40.3723H22.7661H22.7662C22.8926 40.3715 23.0228 40.3707 23.1586 40.3707V43.1612C20.3987 43.6279 18.1253 42.8442 17.5674 40.5113C17.3764 39.6536 17.259 38.7809 17.216 37.903C17.1874 37.4544 17.1965 37.0033 17.2056 36.5523V36.5522C17.2153 36.069 17.2251 35.5858 17.1884 35.106C16.9922 32.5531 16.6614 31.6816 14.2116 31.5608V28.3837C14.3872 28.3426 14.5653 28.3123 14.7444 28.2922C16.0876 28.226 16.6537 27.8142 16.9542 26.4912C17.0909 25.7478 17.1719 24.9954 17.1959 24.2399C17.2319 23.7448 17.2514 23.2469 17.2709 22.7492C17.309 21.7782 17.347 20.8074 17.5079 19.8574C17.8596 17.7791 19.1498 16.7695 21.281 16.6565C21.6916 16.6345 22.1032 16.64 22.5395 16.6459H22.5395C22.7475 16.6487 22.961 16.6515 23.1828 16.6515V19.5037C23.0913 19.5102 23.0022 19.5189 22.9149 19.5275L22.9149 19.5275C22.7325 19.5453 22.5576 19.5624 22.3835 19.5572C20.6467 19.504 20.5569 20.0955 20.4301 21.5332C20.3886 22.0061 20.3989 22.4832 20.4092 22.9606V22.9606C20.4186 23.3934 20.4279 23.8263 20.3987 24.2564C20.3345 25.1566 20.214 26.0521 20.0382 26.9374C19.7876 28.2205 18.9988 29.1747 17.9056 29.9845C20.0277 31.3654 20.2691 33.5112 20.407 35.69C20.4377 36.1751 20.4498 36.6616 20.462 37.1479V37.1479C20.4792 37.8355 20.4964 38.5227 20.566 39.2051C20.6586 40.1095 21.0103 40.3402 21.9441 40.3677C22.2114 40.3756 22.4788 40.374 22.7659 40.3723ZM23.7327 28.1356H23.7655C24.7801 28.1524 25.5893 28.9884 25.5725 30.0033C25.5725 30.0366 25.5714 30.0697 25.5695 30.1028C25.5124 31.0945 24.6624 31.8519 23.6707 31.7948C23.6307 31.7957 23.591 31.7948 23.551 31.7929C22.5411 31.7427 21.763 30.8833 21.8132 29.8734C21.8634 28.8635 22.7228 28.0854 23.7327 28.1356ZM30.0553 28.1356C31.165 28.127 31.902 28.8462 31.9078 29.9432C31.9139 31.0697 31.2152 31.7904 30.1127 31.7951C28.9914 31.8001 28.2533 31.0909 28.2472 30.0005C28.2439 29.9448 28.2431 29.8891 28.2447 29.8335C28.2759 28.8646 29.0865 28.1044 30.0553 28.1356ZM43.2932 26.7459C43.5884 27.8484 44.1631 28.2359 45.3238 28.2888C45.4483 28.2946 45.5725 28.3104 45.7166 28.3288L45.7168 28.3288C45.7927 28.3385 45.8741 28.3489 45.9641 28.3589V31.5352C45.8229 31.5815 45.6782 31.6162 45.5313 31.6388C43.976 31.7356 43.267 32.3737 43.1099 33.9332C43.0513 34.5152 43.0297 35.1009 43.0082 35.6868V35.6868V35.687C42.9929 36.1032 42.9776 36.5195 42.949 36.9345C42.92 38.0315 42.8202 39.1255 42.6502 40.2095C42.2533 42.1736 41.027 43.1535 39.0009 43.2731C38.5565 43.2994 38.11 43.2927 37.6481 43.2857L37.6476 43.2857C37.4318 43.2825 37.2126 43.2792 36.9888 43.2792V40.4402C37.114 40.4325 37.2345 40.4237 37.3517 40.4152C37.5885 40.3981 37.8121 40.3819 38.0362 40.3765C39.2467 40.3476 39.6748 39.9573 39.734 38.755C39.7701 38.0296 39.7949 37.3037 39.8198 36.5779C39.8403 35.982 39.8607 35.3862 39.8873 34.7906C39.973 32.8811 40.4959 31.1752 42.2748 29.9842C41.2569 29.2585 40.4396 28.3795 40.228 27.1943C40.0338 26.1049 39.9393 24.9973 39.8449 23.8904L39.8448 23.8898C39.8148 23.5372 39.7847 23.1846 39.7514 22.8328C39.7181 22.4763 39.7018 22.1183 39.6856 21.7603C39.6687 21.387 39.6518 21.0138 39.6155 20.6424C39.5389 19.8568 38.9992 19.585 38.2842 19.5674C38.0075 19.5607 37.7299 19.5622 37.4175 19.5638H37.4174C37.2675 19.5646 37.1095 19.5655 36.9397 19.5655V16.7932C40.2814 16.2384 42.5898 17.3502 42.8043 20.5475C42.85 21.2316 42.8691 21.9173 42.8881 22.603V22.603L42.8881 22.6033C42.9064 23.2633 42.9247 23.9232 42.9669 24.5816C43.0046 25.3121 43.1138 26.037 43.2932 26.7459ZM51.5455 30C51.5455 41.8992 41.8992 51.5455 30 51.5455C18.1008 51.5455 8.45455 41.8992 8.45455 30C8.45455 18.1008 18.1008 8.45455 30 8.45455C41.8992 8.45455 51.5455 18.1008 51.5455 30ZM54.5455 30C54.5455 43.5561 43.5561 54.5455 30 54.5455C16.4439 54.5455 5.45455 43.5561 5.45455 30C5.45455 16.4439 16.4439 5.45455 30 5.45455C43.5561 5.45455 54.5455 16.4439 54.5455 30Z" fill="#F0F2FE"/>
+          </svg>
+          </a>
+          </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">Request access</button>
+              <a href="{{home.projectData.swagger.infoUrl}}" class="btn btn-default" role="button" >More info...</a>
+          </div>
+        </div>
+        <div class="col-md-12">
+        <div class="col-md-10 col-md-offset-1 col-xs-8 col-xs-offset-2">
+          <h4 class="text-center" style="float:right;">Figma</h4>
+          <a href="{{home.projectData.figma.url}}" >
+          <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.85938 0.00012207H54.1406C57.3767 0.00012207 60 2.62345 60 5.8595V54.1407C60 57.3768 57.3767 60.0001 54.1406 60.0001H5.85938C2.62333 60.0001 0 57.3768 0 54.1407V5.8595C0 2.62345 2.62333 0.00012207 5.85938 0.00012207ZM30 37.3333V44.6666C30 48.7146 26.6407 52 22.5015 52C18.3623 52 15.003 48.7146 15.003 44.6666C15.003 40.6187 18.3623 37.3333 22.5015 37.3333H30ZM15.003 30C15.003 25.952 18.3623 22.6667 22.5015 22.6667H30V29.9894C30.0058 25.9463 33.3629 22.6667 37.4985 22.6667C41.6377 22.6667 44.997 25.952 44.997 30C44.997 34.048 41.6377 37.3333 37.4985 37.3333C33.3629 37.3333 30.0058 34.0537 30 30.0105V37.3333H22.5015C18.3623 37.3333 15.003 34.048 15.003 30ZM22.5019 7.99999C18.3627 7.99999 15.0034 11.2853 15.0034 15.3333C15.0034 19.3813 18.3627 22.6667 22.5019 22.6667L30 22.6667L30.0004 22.6667L37.4985 22.6667C41.6377 22.6667 44.997 19.3813 44.997 15.3333C44.997 11.2853 41.6377 7.99999 37.4985 7.99999L30.0004 7.99999H22.5019Z" fill="#F0F2FE"/>
+          </svg>
+          </a>
+          </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">Request access</button>
+              <a href="{{home.projectData.figma.infoUrl}}" class="btn btn-default" role="button" >More info...</a>
+          </div>
+        </div>  
       </div>
-    </div>
-  </div>
+
+  <div class="col-md-3 col-sm-6 development">
+      <h2>Development</h2>
+        <div class="col-md-12 border">
+        <div class="col-md-10 col-md-offset-1 col-xs-8 col-xs-offset-2">
+          <h4 class="text-center" style="float:right;">GitLab</h4>
+          <a href="{{home.projectData.gitlab.url}}" >
+          <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.85938 0H54.1406C57.3767 0 60 2.62333 60 5.85938V54.1406C60 57.3767 57.3767 60 54.1406 60H5.85938C2.62333 60 0 57.3767 0 54.1406V5.85938C0 2.62333 2.62333 0 5.85938 0ZM49.5614 25.6993L51.8693 32.7902C52.0427 33.3194 52.0436 33.89 51.8719 34.4198C51.7002 34.9495 51.3648 35.4111 50.914 35.738L30.612 50.4845C30.4346 50.616 30.2199 50.6875 29.9991 50.6887C29.7783 50.6899 29.5629 50.6206 29.3841 50.491L9.08604 35.738C8.63521 35.4111 8.29978 34.9495 8.1281 34.4198C7.95641 33.89 7.95733 33.3194 8.13071 32.7902L10.4801 25.5721C10.4816 25.5676 10.484 25.5631 10.4865 25.5586C10.4904 25.5514 10.4944 25.5442 10.4944 25.537L15.1269 11.2669C15.2487 10.8983 15.4835 10.5774 15.7981 10.35C16.1127 10.1226 16.491 10.0001 16.8792 10H16.8896C17.2751 9.99894 17.6508 10.1212 17.9619 10.3489C18.273 10.5766 18.503 10.8978 18.6185 11.2656L23.0382 24.8478H36.967L41.3802 11.2669C41.4962 10.8978 41.7274 10.5756 42.04 10.3476C42.3526 10.1196 42.73 9.99777 43.1169 10C43.5047 9.99831 43.8832 10.1186 44.1988 10.3438C44.5144 10.5691 44.7512 10.8879 44.8757 11.2552L49.5043 25.5072C49.5296 25.5692 49.5488 25.6335 49.5614 25.6993ZM27.1866 44.345L21.5273 26.9324H13.6044L27.1866 44.345ZM38.2455 27.6554L32.8199 44.3489L34.1218 42.6745L46.4099 26.9324H38.4805L38.2455 27.6554ZM47.1121 24.8478L43.1351 12.6038L39.1528 24.8478H47.1121ZM32.3513 39.0557L36.2933 26.9246H23.7145L29.9994 46.279L32.3513 39.0557ZM20.855 24.8478L16.8701 12.6038L12.9008 24.8478H20.855ZM10.1043 33.7786C10.1407 33.891 10.2118 33.989 10.3075 34.0584L24.6438 44.4761L11.8495 28.0733L10.105 33.4328C10.0681 33.545 10.0679 33.6661 10.1043 33.7786ZM35.3549 44.4696L49.6925 34.0584C49.7881 33.9886 49.859 33.8903 49.8951 33.7777C49.9313 33.665 49.9308 33.5438 49.8937 33.4315L48.1505 28.0733L35.4042 44.4073L35.3549 44.4696Z" fill="#F0F2FE"/>
+          </svg>
+          </a>
+          </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">Request access</button>
+              <a href="{{home.projectData.gitlab.infoUrl}}" class="btn btn-default" role="button" >More info...</a>
+          </div>
+        </div>
+        <div class="col-md-12 border">
+        <div class="col-md-10 col-md-offset-1 col-xs-8 col-xs-offset-2">
+          <h4 class="text-center" style="float:right;">Proxmox</h4>
+          <a href="{{home.projectData.proxmox.url}}" >
+          <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.85938 0H54.1406C57.3767 0 60 2.62333 60 5.85938V54.1406C60 57.3767 57.3767 60 54.1406 60H5.85938C2.62333 60 0 57.3767 0 54.1406V5.85938C0 2.62333 2.62333 0 5.85938 0ZM16.9063 14.6092C15.0363 12.5192 15.0363 12.3597 17.0347 11.3458L17.0328 11.344C18.461 10.6143 21.4402 10.6767 22.8995 11.5017C23.5338 11.85 25.4038 13.6613 27.0208 15.4672C28.6378 17.273 30 18.7635 30.0312 18.7635C30.0312 18.7635 31.4263 17.2418 33.0745 15.403C36.688 11.3458 37.7037 10.7115 40.6187 10.9022C42.1733 10.9645 42.9965 11.1863 43.7573 11.7583C44.3275 12.169 44.7712 12.6127 44.7088 12.741C44.5493 13.2158 30.1907 28.9073 29.9358 28.8762C29.747 28.8762 27.2738 26.15 16.9063 14.6092ZM8 17.6213C8 17.1795 8.825 16.6075 10.3778 16.0062C11.8995 15.403 14.3085 15.5295 15.7972 16.2592C16.7817 16.7028 18.8405 18.7635 23.0572 23.3615C26.2912 26.9108 28.922 29.89 28.922 30.0165C28.922 30.1118 26.2582 33.1552 22.9948 36.7375C16.4957 43.8692 15.799 44.4082 12.7227 44.4412C10.8215 44.4412 8.22183 43.3632 8.06417 42.507C8.03117 42.2522 10.409 39.3683 13.3882 36.072C16.338 32.8068 18.7782 30.0807 18.7782 30.0165C18.7782 29.9542 16.3692 27.2262 13.39 23.9628C10.4402 20.6977 8 17.8432 8 17.6213ZM37.0052 23.3597C41 18.9853 43.3137 16.7028 44.234 16.2262V16.228C45.2478 15.7202 46.0087 15.5937 47.4662 15.656C49.4957 15.7843 51.8405 16.734 52 17.559C52.0312 17.812 49.6533 20.6683 46.6742 23.9298C43.7262 27.195 41.2842 29.9542 41.2842 30.0165C41.2842 30.0807 43.7262 32.8398 46.6742 36.1032C49.6533 39.3683 52.0312 42.221 52 42.507C51.8405 43.3632 49.2427 44.4412 47.3397 44.4412C44.2652 44.4082 43.5667 43.8692 37.0693 36.7375C33.8042 33.1552 31.1403 30.1448 31.1403 30.0165C31.1403 29.89 33.773 26.9108 37.0052 23.3597ZM15.3535 47.2938C15.4177 47.1362 18.6517 43.4603 22.5823 39.1172C26.513 34.7428 29.8093 31.1605 29.9358 31.1605C30.1888 31.1275 44.5493 46.819 44.7088 47.2957C44.7712 47.4222 44.3275 47.8658 43.7573 48.2783C42.9965 48.8485 42.1733 49.0703 40.6187 49.1345C37.7348 49.2922 36.7522 48.6908 33.0433 44.5695C31.4263 42.7618 30.0623 41.2732 30.0312 41.2732C30 41.2732 28.636 42.7618 27.052 44.5365C23.4055 48.6578 22.3293 49.3233 19.4437 49.1345C17.8908 49.0703 17.0658 48.8485 16.3068 48.2783C15.7348 47.8658 15.2912 47.4222 15.3535 47.2938Z" fill="#F0F2FE"/>
+          </svg>
+          </a>
+          </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">Request access</button>
+              <a href="{{home.projectData.proxmox.infoUrl}}" class="btn btn-default" role="button" >More info...</a>
+          </div>
+        </div>
+        <div class="col-md-12">
+        <div class="col-md-10 col-md-offset-1 col-xs-8 col-xs-offset-2">
+          <h4 class="text-center" style="float:right;">Firebase</h4>
+          <a href="{{home.projectData.firebase.url}}" >
+          <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0)">
+          <path d="M54.1406 0.00012207H5.85938C2.62333 0.00012207 0 2.62345 0 5.8595V54.1407C0 57.3768 2.62333 60.0001 5.85938 60.0001H54.1406C57.3767 60.0001 60 57.3768 60 54.1407V5.8595C60 2.62345 57.3767 0.00012207 54.1406 0.00012207Z" fill="#F0F2FE"/>
+          <path d="M30.1356 13.5467L46.3451 44.4017H13.1705L19.0895 6.59977L19.0896 6.59978L19.0915 6.5865C19.099 6.53349 19.1515 6.48685 19.2213 6.49933L19.2213 6.49939L19.2327 6.50129C19.2496 6.50411 19.3064 6.53017 19.3442 6.59102L25.6361 18.3234L26.5283 19.9871L27.4035 18.3143L29.9061 13.5306L29.9121 13.519L29.9179 13.5072C29.9259 13.4909 29.9335 13.483 29.9388 13.4786C29.9447 13.4736 29.9531 13.4686 29.965 13.4649C29.9858 13.4585 30.0213 13.4555 30.0663 13.4741C30.0942 13.4927 30.1185 13.5181 30.1356 13.5467Z" fill="#F0F2FE" stroke="#02063C" stroke-width="2"/>
+          <path d="M14.8637 42.1159L26.5086 19.9728L31.771 29.9288L14.8637 42.1159Z" fill="#F0F2FE" stroke="#02063C" stroke-width="2"/>
+          <path d="M31.078 53.6761L31.0808 53.6745L46.8899 44.8798L42.3416 16.704C42.3328 16.6602 42.3135 16.6375 42.2922 16.6224C42.2694 16.6062 42.2299 16.5899 42.1721 16.5936C42.1707 16.594 42.1691 16.5944 42.1672 16.595C42.1598 16.5974 42.1515 16.6007 42.1431 16.6048C42.1279 16.6123 42.1199 16.6188 42.1184 16.6201C42.1182 16.6203 42.1181 16.6203 42.1182 16.6202L13.6385 45.1856L28.767 53.6761H31.078ZM31.078 53.6761C30.3742 54.0705 29.4714 54.0706 28.7675 53.6764L31.078 53.6761Z" fill="#F0F2FE" stroke="#02063C" stroke-width="2"/>
+          </g>
+          <defs>
+          <clipPath id="clip0">
+          <rect width="60" height="60" fill="white" transform="translate(0 0.00012207)"/>
+          </clipPath>
+          </defs>
+          </svg>
+          </a>
+          </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">Request access</button>  
+              <a href="{{home.projectData.proxmox.infoUrl}}" class="btn btn-default" role="button" >More info...</a>
+          </div>
+        </div>  
+      </div>
 
 </div>
 
 <!-- Modal -->
 <div class="modal fade" id="requestAccessModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+<div class="modal-dialog">
 
-    <div class="modal-content">
-      <!-- Modal Header -->
-      <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">
-            <span aria-hidden="true">&times;</span>
-            <span class="sr-only">Close</span>
-          </button>
-          <h4 class="modal-title" id="myModalLabel">Request Access</h4>
-      </div>
-        
-      <!-- Modal Body -->
-      <div class="modal-body">
-        <form role="form">
-            <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="input" class="form-control" id="name" placeholder="Enter full name"/>
-              </div>
-          <div class="form-group">
-            <label for="email">Email address</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter email"/>
-          </div>
-        </form>
-      </div>
-          
-      <!-- Modal Footer -->
-      <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Request</button>
-      </div>
+  <div class="modal-content">
+    <!-- Modal Header -->
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span>
+          <span class="sr-only">Close</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Request Access</h4>
     </div>
-
+      
+    <!-- Modal Body -->
+    <div class="modal-body">
+      <form role="form">
+          <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="input" class="form-control" id="name" placeholder="Enter full name"/>
+            </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email"/>
+        </div>
+      </form>
+    </div>
+        
+    <!-- Modal Footer -->
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Request</button>
+    </div>
   </div>
+
+</div>
 </div>
