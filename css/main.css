@@ -72,14 +72,6 @@ ul {
     background-color: transparent;
 }
 
-.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open > .dropdown-toggle.btn-success {
-	border: 2px solid #EC009C !important;
-    box-shadow: 0px 0px 20px #C319E1 !important;
-    color: #EC009C !important;
-    background: transparent!important;
-    border-color: transparent !important;
-}
-
 .btn {
     display: inline-block;
     margin-bottom: 0;
@@ -155,7 +147,7 @@ ul {
 }
 
 .management h2 {
-	font-family: Overpass;
+	font-family: sans-serif;
     position: absolute;
     margin-top: -80px;
     font-style: normal;
@@ -167,10 +159,10 @@ ul {
 }
 
 .management h4 {
-	font-family: Overpass;
+	font-family: sans-serif;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 30px;
+	font-size: 25px;
 	line-height: 36px;
 	display: flex;
 	align-items: center;
@@ -205,7 +197,7 @@ ul {
 	height: 48px;
 	left: 108px;
 	top: 291px;
-	border: 1px solid #2DEC9B;
+	border: 1px solid #2DEC9B !important;
 	box-sizing: border-box;
 	border-radius: 8px;
 	color: #2DEC9B;
@@ -219,7 +211,7 @@ ul {
 }
 
 .documents h2 {
-	font-family: Overpass;
+	font-family: sans-serif;
     position: absolute;
     margin-top: -80px;
     font-style: normal;
@@ -231,10 +223,10 @@ ul {
 }
 
 .documents h4 {
-	font-family: Overpass;
+	font-family: sans-serif;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 25px;
+	font-size: 22px;
 	line-height: 36px;
 	display: flex;
 	align-items: center;
@@ -276,7 +268,7 @@ ul {
 }
 
 .tools h2 {
-	font-family: Overpass;
+	font-family: sans-serif;
     position: absolute;
     margin-top: -80px;
     font-style: normal;
@@ -288,10 +280,10 @@ ul {
 }
 
 .tools h4 {
-	font-family: Overpass;
+	font-family: sans-serif;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 28px;
+	font-size: 24px;
 	line-height: 36px;
 	display: flex;
 	align-items: center;
@@ -332,7 +324,7 @@ ul {
 }
 
 .development h2 {
-	font-family: Overpass;
+	font-family: sans-serif;
     position: absolute;
     margin-top: -80px;
     font-style: normal;
@@ -344,10 +336,10 @@ ul {
 }
 
 .development h4 {
-	font-family: Overpass;
+	font-family: sans-serif;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 27px;
+	font-size: 22px;
 	line-height: 36px;
 	display: flex;
 	align-items: center;
@@ -365,8 +357,8 @@ ul {
 }
 
 .snt-container {
-	background: linear-gradient(121.15deg, #01043C 0%, #030855 100%);
-mix-blend-mode: normal;
+	background: #030855;
+	mix-blend-mode: normal;
 }
 
 .col-md-10.col-md-offset-1.col-xs-8.col-xs-offset-2 {
@@ -399,7 +391,7 @@ svg.sintezis {
 
 
 h1 {
-	font-family: Overpass;
+	font-family: sans-serif;
 	font-style: normal;
 	font-weight: 900;
 	font-size: 25px;
