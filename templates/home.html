@@ -1,20 +1,24 @@
-<div class="col-md-12 text-center" style="border-bottom:#4B576A 1px solid; padding-top:10px; margin-top: -60px; padding-bottom: 20px;">
-  <svg width="35" height="35" viewBox="0 0 30535" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: -100px;;">
+<?php get_header(); 
+/*Template Name: Dashboard */
+?>
+
+<div class="col-md-12 text-center header">
+  <svg class="sintezis" width="35" height="35" viewBox="0 0 30535" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4997 0.334748C16.4997 0.148858 16.3683 0 16.1804 0H7.83639C7.64846 0 7.51706 0.148858 7.51706 0.334748L0 25.7273C0 25.9132 0.131402 26.0621 0.319328 26.0621H8.66334C8.85126 26.0621 8.98266 25.9132 8.98266 25.7273L16.4997 0.334748Z" fill="#F0F2FE"/>
   <path fill-rule="evenodd" clip-rule="evenodd" d="M27.6499 9.01553C27.6499 8.82964 27.5185 8.68079 27.3306 8.68079H18.9866C18.7987 8.68079 18.6673 8.82964 18.6673 9.01553L11.1502 34.4081C11.1502 34.594 11.2816 34.7429 11.4695 34.7429H19.8135C20.0015 34.7429 20.1329 34.594 20.1329 34.4081L27.6499 9.01553Z" fill="#F0F2FE"/>
   </svg>
-  <h1 style="display: inline; font-family: sans-serif; position: absolute; font-style: normal; top: -19px; font-weight: 900; font-size: 25px; line-height: 54px; color: #F0F2FE;">Dashboard</h4>
+  <h1 class="title">Dashboard</h4>
 </div>
 
 <div class="snt-container container" style="margin-top:70px;">
-<div class="row">
+<div class="col-md-12 column">
   <div class="col-md-3 col-sm-6 management">
       <h2>Managment</h2>
         <div class="col-md-12 border">
           <div class="col-md-10 col-md-offset-1 col-xs-8 col-xs-offset-2">
           <h4 class="text-center" style="float:right;">Slack</h4>
           <a href="{{home.projectData.slack.url}}" >
-          <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg fill="currentColor" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0)">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M54.1406 0.00012207H5.85938C2.62333 0.00012207 0 2.62345 0 5.8595V54.1407C0 57.3768 2.62333 60.0001 5.85938 60.0001H54.1406C57.3767 60.0001 60 57.3768 60 54.1407V5.8595C60 2.62345 57.3767 0.00012207 54.1406 0.00012207ZM24.1324 8C21.7001 8.00179 19.7316 9.9717 19.7334 12.3991C19.7316 14.8265 21.7019 16.7964 24.1342 16.7982H28.5349V12.4009C28.5367 9.9735 26.5664 8.00359 24.1324 8ZM24.1324 19.7333H12.4007C9.96846 19.7351 7.99821 21.705 8 24.1324C7.99641 26.5598 9.96666 28.5297 12.3989 28.5333H24.1324C26.5646 28.5315 28.5349 26.5616 28.5331 24.1342C28.5349 21.705 26.5646 19.7351 24.1324 19.7333ZM47.5993 19.7333C50.0316 19.7351 52.0018 21.705 52 24.1324C52.0018 26.5616 50.0316 28.5315 47.5993 28.5333H43.1985V24.1324C43.1967 21.705 45.167 19.7351 47.5993 19.7333ZM40.2665 12.3991V24.1324C40.2683 26.5616 38.298 28.5315 35.8658 28.5333C33.4335 28.5297 31.4632 26.5598 31.4668 24.1324V12.3991C31.465 9.97171 33.4353 8.0018 35.8676 8.00001C38.2998 8.0036 40.2683 9.9735 40.2665 12.3991ZM35.8658 52C38.2981 51.9982 40.2683 50.0283 40.2665 47.6009C40.2683 45.1735 38.2981 43.2036 35.8658 43.2018H31.4651V47.6009C31.4633 50.0265 33.4335 51.9964 35.8658 52ZM35.8658 40.2649H47.5992C50.0315 40.2631 52.0018 38.2932 52 35.8658C52.0036 33.4384 50.0333 31.4685 47.601 31.4649H35.8676C33.4353 31.4667 31.4651 33.4366 31.4669 35.864C31.4651 38.2932 33.4335 40.2631 35.8658 40.2649ZM12.4007 40.2648C9.96842 40.263 7.99816 38.2931 7.99996 35.8657C7.99816 33.4383 9.96842 31.4684 12.4007 31.4666H16.8014V35.8657C16.8032 38.2931 14.8329 40.263 12.4007 40.2648ZM19.7334 47.5991V35.8657C19.7316 33.4383 21.7001 31.4684 24.1341 31.4684C26.5664 31.4719 28.5366 33.4419 28.5331 35.8693V47.6009C28.5348 50.0283 26.5646 51.9982 24.1323 52C21.7001 51.9964 19.7298 50.0265 19.7334 47.5991Z" fill="#F0F2FE"/>
           </g>
@@ -26,10 +30,10 @@
           </svg>
           </a>
           </div>
-            <div class="text-center">
+            <div class="text-center more">
               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">Request access</button>
               <!-- <button type="button" class="btn btn-default"></button> -->
-              <a href="{{home.projectData.slack.infoUrl}}" class="btn btn-default" role="button" >More info...</a>
+              <a class="link" href="{{home.projectData.slack.infoUrl}}" >More info...</a>
           </div>
         </div>
         <div class="col-md-12 border">
@@ -41,9 +45,9 @@
           </svg>
           </a>
           </div>
-            <div class="text-center">
+            <div class="text-center more">
               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">Request access</button>
-              <a href="{{home.projectData.jira.infoUrl}}" class="btn btn-default" role="button" >More info...</a>
+              <a class="link" href="{{home.projectData.slack.infoUrl}}" >More info...</a>
           </div>
         </div>
         <div class="col-md-12">
@@ -55,9 +59,9 @@
               </svg>
           </a>
           </div>
-            <div class="text-center">
+            <div class="text-center more">
               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">Request access</button>
-              <a href="{{home.projectData.zoom.infoUrl}}" class="btn btn-default" role="button" >More info...</a>
+              <a class="link" href="{{home.projectData.slack.infoUrl}}" >More info...</a>
           </div>
         </div>  
   </div>
@@ -73,9 +77,9 @@
           </svg>
           </a>
           </div>
-            <div class="text-center">
+            <div class="text-center more">
               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">Request access</button>
-              <a href="{{home.projectData.wiki.infoUrl}}" class="btn btn-default" role="button" >More info...</a>
+              <a class="link" href="{{home.projectData.slack.infoUrl}}" >More info...</a>
           </div>
         </div>
         <div class="col-md-12 border">
@@ -87,9 +91,9 @@
           </svg>
           </a>
           </div>
-            <div class="text-center">
+            <div class="text-center more">
               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">Request access</button>
-              <a href="{{home.projectData.cloud.infoUrl}}" class="btn btn-default" role="button" >More info...</a>
+              <a class="link" href="{{home.projectData.slack.infoUrl}}" >More info...</a>
           </div>
         </div>
         <div class="col-md-12">
@@ -118,9 +122,9 @@
           </svg>
           </a>
           </div>
-            <div class="text-center">
+            <div class="text-center more">
               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">Request access</button>
-              <a href="{{home.projectData.doc.infoUrl}}" class="btn btn-default" role="button" >More info...</a>
+             <a class="link" href="{{home.projectData.slack.infoUrl}}" >More info...</a>
           </div>
       </div>
   </div>
@@ -136,9 +140,9 @@
           </svg>
           </a>
           </div>
-            <div class="text-center">
+            <div class="text-center more">
               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">Request access</button>
-              <a href="{{home.projectData.drawio.infoUrl}}" class="btn btn-default" role="button" >More info...</a>
+              <a class="link" href="{{home.projectData.slack.infoUrl}}" >More info...</a>
           </div>
         </div>
         <div class="col-md-12 border">
@@ -150,9 +154,9 @@
           </svg>
           </a>
           </div>
-            <div class="text-center">
+            <div class="text-center more">
               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">Request access</button>
-              <a href="{{home.projectData.swagger.infoUrl}}" class="btn btn-default" role="button" >More info...</a>
+              <a class="link" href="{{home.projectData.slack.infoUrl}}" >More info...</a>
           </div>
         </div>
         <div class="col-md-12">
@@ -164,9 +168,9 @@
           </svg>
           </a>
           </div>
-            <div class="text-center">
+            <div class="text-center more">
               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">Request access</button>
-              <a href="{{home.projectData.figma.infoUrl}}" class="btn btn-default" role="button" >More info...</a>
+              <a class="link" href="{{home.projectData.slack.infoUrl}}" >More info...</a>
           </div>
         </div>  
       </div>
@@ -182,9 +186,9 @@
           </svg>
           </a>
           </div>
-            <div class="text-center">
+            <div class="text-center more">
               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">Request access</button>
-              <a href="{{home.projectData.gitlab.infoUrl}}" class="btn btn-default" role="button" >More info...</a>
+              <a class="link" href="{{home.projectData.slack.infoUrl}}" >More info...</a>
           </div>
         </div>
         <div class="col-md-12 border">
@@ -196,9 +200,9 @@
           </svg>
           </a>
           </div>
-            <div class="text-center">
+            <div class="text-center more">
               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">Request access</button>
-              <a href="{{home.projectData.proxmox.infoUrl}}" class="btn btn-default" role="button" >More info...</a>
+              <a class="link" href="{{home.projectData.slack.infoUrl}}" >More info...</a>
           </div>
         </div>
         <div class="col-md-12">
@@ -220,9 +224,9 @@
           </svg>
           </a>
           </div>
-            <div class="text-center">
+            <div class="text-center more">
               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#requestAccessModal">Request access</button>  
-              <a href="{{home.projectData.proxmox.infoUrl}}" class="btn btn-default" role="button" >More info...</a>
+              <a class="link" href="{{home.projectData.slack.infoUrl}}" >More info...</a>
           </div>
         </div>  
       </div>
