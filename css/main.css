@@ -4,12 +4,13 @@ img {
 }
 
 body {
-	background-color: linear-gradient(121.15deg, #01043C 0%, #030855 100%) !important;
+	background: #030855 !important;
 }
 
 .snt-container {
-	padding-top: 80px;
-}
+	background: linear-gradient(121.15deg, #01043C 0%, #030855 100%);
+	mix-blend-mode: normal;
+}		
 
 .snt-footer {
 	text-align: center;
@@ -356,10 +357,6 @@ ul {
     width: 219px;
 }
 
-.snt-container {
-	background: #030855;
-	mix-blend-mode: normal;
-}
 
 .col-md-10.col-md-offset-1.col-xs-8.col-xs-offset-2 {
     padding-bottom: 20px;
@@ -401,7 +398,61 @@ h1 {
 	color: #F0F2FE;
 }
 
+@media (min-width: 320px) and (max-width: 350px) {
+	.management {
+		width: 280px !important;
+	}
+	.documents {
+		width: 280px !important;
+	}
+	.tools {
+		width: 280px !important;
+	}
+	.development {
+		width: 280px !important;
+	}
+}
+
 @media (max-width: 1200px) {
+	.management {
+		width: 300px;
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+	}
+	.documents {
+		width: 300px;
+		margin-left: 0px !important;
+		margin-top: 80px !important;
+		margin-right: 0px !important;
+	}
+	.tools {
+		width: 300px;
+		margin-left: 0px !important;
+		margin-top: 80px !important;
+		margin-right: 0px !important;
+	}
+	.development {
+		width: 300px;
+		margin-left: 0px !important;
+		margin-top: 80px !important;
+		margin-right: 0px !important;
+	}
+	.management h4{
+		font-size: 30px;
+    	width: 150px;
+	}
+	.documents h4 {
+		font-size: 30px;
+		width: 160px;
+	}
+	.tools h4 {
+		font-size: 30px;
+    	width: 150px;
+	}
+	.development h4 {
+		font-size: 30px;
+    	width: 150px;
+	}
 	.header {
 		margin-top: 20px;
 		margin-bottom: 80px;
@@ -414,69 +465,27 @@ h1 {
 	.col-md-10.col-md-offset-1.col-xs-8.col-xs-offset-2 {
 		display: contents;
 	}
-	.management {
-		width: fit-content;
-		margin-left: 0;
-		margin-bottom: 80px;
-	}
-	.documents {
-		margin-right: 0;
-		width: fit-content;
-		margin-left: 0;
-		margin-bottom: 80px;
-	}
-	.tools {
-		margin-right: 0;
-		width: fit-content;
-		margin-left: 0;
-		margin-bottom: 80px;
-	}
-	.development {
-		margin-right: 0;
-		width: fit-content;
-		margin-left: 0;
-	}
 	.more {
 		margin-top: 20px;
 	}
 	.management .btn-success {
-		display: block;
+		width: 230px;
 	}
 	.documents .btn-success {
-		display: block;
+		width: 230px;
 	}
 	.tools .btn-success {
-		display: block;
+		width: 230px;
 	}
 	.more {
 		margin-top: 20px;
 	}
 	.development .btn-success {
-		display: block;
+		width: 230px;
 	}
 }
 
 @media (max-width: 768px) {
-	.management {
-		width: fit-content !important;
-		margin-left: 0px !important;
-	}
-	.documents {
-		width: fit-content;
-		margin-left: 0px !important;
-    	margin-top: 80px !important;
-	}
-	.tools {
-		width: fit-content;
-		margin-left: 0px !important;
-   	 	margin-top: 80px !important;
-	}
-	.development {
-		width: fit-content;
-		margin-left: 0px !important;
-		margin-top: 80px !important;
-		margin-right: 0px !important;
-	}
 	.col-md-12.column {
 		width: inherit !important;
 	}
@@ -495,7 +504,6 @@ h1 {
 	.management {
 		margin-left: 0px !important;
 		margin-right: 0px !important;
-		margin-bottom: 80px;
 	}
 	.development {
 		margin-left: 0px !important;
@@ -504,12 +512,10 @@ h1 {
 	.tools {
 		margin-left: 0px !important;
 		margin-right: 0px !important;
-		margin-bottom: 80px;
 	}
 	.documents {
 		margin-left: 0px !important;
 		margin-right: 0px !important;
-		margin-bottom: 80px;
 	}
   }
   @media (min-width: 1200px) {
