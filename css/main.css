@@ -486,6 +486,17 @@ h1 {
 	  width: 1170px;
 	}
   }
+  @media (max-width: 992px) {
+	  .dashboard-title {
+		  margin-left: -120px;
+	  }
+	  .dashboard-item {
+		  display: none;
+	  }
+	  .dashboard-project {
+		  display: none;
+	  }
+  }
   .container-fluid {
 	margin-right: auto;
 	margin-left: auto;
@@ -528,4 +539,8 @@ a.link:hover {
 
 .dashboard-item {
 	margin-top: 10px;
+}
+
+.dashboard-title {
+	margin-left: -60px;
 }
