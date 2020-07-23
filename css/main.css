@@ -398,24 +398,32 @@ h1 {
 		width: 300px;
 		margin-left: 0px !important;
 		margin-right: 0px !important;
+		float: inherit;
+		padding-bottom: 580px !important;
 	}
 	.documents {
 		width: 300px;
-		margin-left: 0px !important;
-		margin-top: 80px !important;
-		margin-right: 0px !important;
+    margin-left: 0px !important;
+    margin-top: 80px !important;
+    margin-right: 0px !important;
+    float: inherit;
+    padding-bottom: 580px !important;
 	}
 	.tools {
 		width: 300px;
 		margin-left: 0px !important;
 		margin-top: 80px !important;
 		margin-right: 0px !important;
+		float: inherit;
+		padding-bottom: 580px !important;
 	}
 	.development {
 		width: 300px;
 		margin-left: 0px !important;
 		margin-top: 80px !important;
 		margin-right: 0px !important;
+		float: inherit;
+		padding-bottom: 580px !important;
 	}
 	.management h4{
 		
@@ -477,6 +485,34 @@ h1 {
 	  text-align: -webkit-center;
 	}
   }
+
+@media (min-width: 768px) and (max-width: 992px){
+	.col-md-12.column {
+		width: initial !important;
+	}
+	.management {
+		margin-left: -10px !important;
+		margin-right: 20px !important;
+		float: left;
+	}
+	.documents {
+		margin-left: 0px !important;
+		margin-right: -10px !important;
+		float: right;
+	}
+	.tools {
+		margin-left: -10px !important;
+		margin-top: 80px !important;
+		float: left;
+	}
+	.development {
+		margin-left: 0px !important;
+		margin-top: 80px !important;
+		margin-right: -10px !important;
+		float: right;
+	}
+}
+
   @media (min-width: 992px) and (max-width: 1200px) {
 	.container {
 	  width: 970px;
@@ -501,6 +537,9 @@ h1 {
   @media (min-width: 1200px) {
 	.container {
 	  width: 1170px;
+	}
+	.body {
+		padding-bottom: 110rem;
 	}
   }
   @media (max-width: 992px) {
