@@ -526,12 +526,12 @@ h1 {
 }
 
   @media (min-width: 992px) and (max-width: 1200px) {
-	  .snt-footer {
-		  margin-top: 1480px;
-	  }
-	  .col-md-12.column {
-		  width: initial !important;
-	  }
+	.snt-footer {
+		margin-top: 1480px;
+	}
+	.col-md-12.column {
+		width: initial !important;
+	}
 	.container {
 	  width: 970px;
 	}
@@ -540,7 +540,16 @@ h1 {
 		margin-right: 0px !important;
 		margin-right: -20px !important;
 		float: left;
-		padding-bottom: 0px !important;
+		padding-bottom: 40px !important;
+		width: 40%;
+	}
+	.documents {
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+		margin-left: 0px !important;
+		margin-top: 0px !important;
+		float: right;
+		padding-bottom: 40px !important;
 		width: 40%;
 	}
 	.development {
@@ -548,9 +557,8 @@ h1 {
 		margin-right: 0px !important;
 		margin-left: 0px !important;
 		float: right;
-		padding-bottom: 0px !important;
-		padding-bottom: 0px !important;
-		margin-top: 0px !important;
+		padding-bottom: 40px !important;
+		margin-top: 80px !important;
 		width: 40%;
 	}
 	.tools {
@@ -558,16 +566,7 @@ h1 {
 		margin-right: 0px !important;
 		margin-top: 80px !important;
 		float: left;
-		padding-bottom: 0px !important;
-		width: 40%;
-	}
-	.documents {
-		margin-left: 0px !important;
-		margin-right: 0px !important;
-		margin-left: 0px !important;
-		margin-top: 80px !important;
-		float: right;
-		padding-bottom: 0px !important;
+		padding-bottom: 40px !important;
 		width: 40%;
 	}
   }
