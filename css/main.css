@@ -477,6 +477,10 @@ h1 {
 	.col-md-12.column {
 		width: inherit !important;
 	}
+	body {
+		background: linear-gradient(450deg, #00292F 0%, #111111 86.98%) !important;
+    	mix-blend-mode: normal;
+	}
 }
 
 @media (min-width: 768px) {
@@ -494,44 +498,77 @@ h1 {
 		margin-left: -10px !important;
 		margin-right: 20px !important;
 		float: left;
+		padding-bottom: 40px !important;
 	}
 	.documents {
 		margin-left: 0px !important;
 		margin-right: -10px !important;
 		float: right;
+		padding-bottom: 40px !important;
+		margin-top: 0px !important;
 	}
 	.tools {
 		margin-left: -10px !important;
 		margin-top: 80px !important;
 		float: left;
+		padding-bottom: 40px !important;
 	}
 	.development {
 		margin-left: 0px !important;
 		margin-top: 80px !important;
 		margin-right: -10px !important;
 		float: right;
+		padding-bottom: 40px !important;
+	}
+	.snt-footer {
+		margin-top: 1380px;
 	}
 }
 
   @media (min-width: 992px) and (max-width: 1200px) {
+	  .snt-footer {
+		  margin-top: 1480px;
+	  }
+	  .col-md-12.column {
+		  width: initial !important;
+	  }
 	.container {
 	  width: 970px;
 	}
 	.management {
 		margin-left: 0px !important;
 		margin-right: 0px !important;
+		margin-right: -20px !important;
+		float: left;
+		padding-bottom: 0px !important;
+		width: 40%;
 	}
 	.development {
 		margin-left: 0px !important;
 		margin-right: 0px !important;
+		margin-left: 0px !important;
+		float: right;
+		padding-bottom: 0px !important;
+		padding-bottom: 0px !important;
+		margin-top: 0px !important;
+		width: 40%;
 	}
 	.tools {
 		margin-left: 0px !important;
 		margin-right: 0px !important;
+		margin-top: 80px !important;
+		float: left;
+		padding-bottom: 0px !important;
+		width: 40%;
 	}
 	.documents {
 		margin-left: 0px !important;
 		margin-right: 0px !important;
+		margin-left: 0px !important;
+		margin-top: 80px !important;
+		float: right;
+		padding-bottom: 0px !important;
+		width: 40%;
 	}
   }
   @media (min-width: 1200px) {
