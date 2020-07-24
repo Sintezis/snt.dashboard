@@ -10,6 +10,10 @@ html {
 body {
 	background: linear-gradient(180deg, #00292F 0%, #111111 86.98%);
     mix-blend-mode: normal;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .snt-footer {
@@ -476,10 +480,6 @@ h1 {
 @media (max-width: 768px) {
 	.col-md-12.column {
 		width: inherit !important;
-	}
-	body {
-		background: linear-gradient(450deg, #00292F 0%, #111111 86.98%) !important;
-    	mix-blend-mode: normal;
 	}
 	.snt-footer {
 		margin-top: 100px !important;
