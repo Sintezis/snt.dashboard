@@ -341,12 +341,6 @@ ul {
     padding-bottom: 20px;
 }
 
-svg.sintezis {
-	border-bottom: 2px solid;
-    padding-bottom: 20px;
-    margin-bottom: -4.5px;
-}
-
 svg.icons {
 	float: left;
 }
@@ -361,8 +355,6 @@ svg.icons {
     font-size: 25px;
     line-height: 54px;
     color: #F0F2FE;
-    border-bottom: 2px solid;
-    padding-bottom: 12px;
 }
 
 .header {
