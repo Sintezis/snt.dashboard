@@ -434,6 +434,9 @@ h1 {
 }
 
 @media (max-width: 1200px) {
+	.text-center.more {
+		margin-top: 0px !important;
+	}
 	.management {
 		width: 300px;
 		margin-left: 0px !important;
